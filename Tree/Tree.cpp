@@ -1,14 +1,25 @@
+#include "Tree.h"
 #include <iostream>
 
 int main(){
 
-	int height;
+	int heigh;
 	int spacing;
 	int asterisk;
 
 	std::cout<<"How tall do you want your tree to be:"<<std::endl;
-	std::cin>>height;
-	spacing=height;
+	std::cin>>heigh;
+	spacing=heigh;
+
+	printTree(heigh);
+
+	return 0;
+}
+
+void printTree(int height){
+
+	int spacing=height;
+	int asterisk;
 
 	for(int i=1;i<height;i++){
 
@@ -27,6 +38,4 @@ int main(){
 
 	std::cout<<"*";
 	std::cout<<"\n";
-
-	return 0;
 }
